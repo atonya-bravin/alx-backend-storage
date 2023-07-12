@@ -44,7 +44,7 @@ Write a SQL script that creates a table users following these requirements:
 	- email, string (255 characters), never null and unique
 	- name, string (255 characters)
 - If the table already exists, your script should not fail
-- Your script can be executed on any database
+- Your script can be executed on any database  
 **Context: Make an attribute unique directly in the table schema will enforced your business rules and avoid bugs in your application**  
   
 #### Task 0 [Solution]
@@ -78,4 +78,20 @@ DROP TABLE IF EXISTS users;
 ```
 - Creation of the table, defining the constrants given
 - The country attribute is defined as an ENUM type with three possible values: 'US', 'CO', and 'TN'. It is marked as NOT NULL, meaning a value must be provided for this attribute. Additionally, a default value of 'US' is set for the "country" attribute, which will be used if no explicit value is provided during an INSERT operation.
+
+
+### Task 2
+Write a SQL script that ranks country origins of bands, ordered by the number of (non-unique) fans  
+  
+Requirements:  
+  
+- Import this table dump: metal_bands.sql.zip
+- Column names must be: origin and nb_fans
+- Your script can be executed on any database  
+**Context: Calculate/compute something is always power intensive… better to distribute the load!**
+
+#### Task 2 [Solution]
+**Featured file** -> 2-fans.sql
+
+#### Task 2 [Solution Breakdown]
 
