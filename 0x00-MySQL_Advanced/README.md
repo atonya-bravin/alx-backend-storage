@@ -45,5 +45,15 @@ Write a SQL script that creates a table users following these requirements:
 	- name, string (255 characters)
 - If the table already exists, your script should not fail
 - Your script can be executed on any database
-**Context: Make an attribute unique directly in the table schema will enforced your business rules and avoid bugs in your application**
+**Context: Make an attribute unique directly in the table schema will enforced your business rules and avoid bugs in your application**  
+  
+#### Task 0 [Solution]
+**Featured file** -> 0-uniq_users.sql
+
+#### Task 0 [Solution Breakdown]
+- Check for the existance of the table and delete it if present.
+```
+DROP TABLE IF EXISTS users;
+```
+- Creation of the table, defining the constrants given
 
