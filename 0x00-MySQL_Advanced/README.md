@@ -72,5 +72,10 @@ Write a SQL script that creates a table users following these requirements:
 **Featured file** -> 1-country_users.sql
 
 #### Task 1 [Solution Breakdown]
-
+- Check for the existance of the table and delete it if present.
+```
+DROP TABLE IF EXISTS users;
+```
+- Creation of the table, defining the constrants given
+- The country attribute is defined as an ENUM type with three possible values: 'US', 'CO', and 'TN'. It is marked as NOT NULL, meaning a value must be provided for this attribute. Additionally, a default value of 'US' is set for the "country" attribute, which will be used if no explicit value is provided during an INSERT operation.
 
