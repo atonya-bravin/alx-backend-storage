@@ -78,7 +78,9 @@ DROP TABLE IF EXISTS users;
 ```
 - Creation of the table, defining the constrants given
 - The country attribute is defined as an ENUM type with three possible values: 'US', 'CO', and 'TN'. It is marked as NOT NULL, meaning a value must be provided for this attribute. Additionally, a default value of 'US' is set for the "country" attribute, which will be used if no explicit value is provided during an INSERT operation.
-
+```
+country ENUM('US', 'CO', 'TN') NOT NULL DEFAULT 'US'
+```
 
 ### Task 2
 Write a SQL script that ranks country origins of bands, ordered by the number of (non-unique) fans  
@@ -93,5 +95,16 @@ Requirements:
 #### Task 2 [Solution]
 **Featured file** -> 2-fans.sql
 
-#### Task 2 [Solution Breakdown]
+#### Task 2 [Solution Breakdown
+- Select the origin and fans column from the mental_bands table.
+- Calculate the sum of the fans, grouped by their origins and aliased by nb_fans
+```
+SELECT origin, SUM(fans) as nb_fans
+    FROM metal_bands
+    group by origin
+```
+- Order the results by nb_fans in descending order.
+```
+ORDER BY nb_fans DESC;
+```
 
