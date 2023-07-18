@@ -55,3 +55,11 @@ Write a script that lists all documents in the collection school:
 #### Taks 3 [Solution]
 **Featured file** -> 3-all
 
+### Task 4
+Write a script that lists all documents with name="Holberton school" in the collection school:
+
+- The database name will be passed as option of mongo command
+
+#### Taks 4 [Solution]
+**Featured file** -> 4-match
+
