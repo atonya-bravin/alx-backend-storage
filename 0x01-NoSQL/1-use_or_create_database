@@ -1,0 +1,2 @@
+//This file contains the script to create and select the database my_db
+use my_db
