@@ -46,3 +46,12 @@ Write a script that inserts a document in the collection school:
 
 #### Task 2 [Solution]
 **Featured file** -> 2-insert
+
+### Task 3
+Write a script that lists all documents in the collection school:
+
+- The database name will be passed as option of mongo command
+
+#### Taks 3 [Solution]
+**Featured file** -> 3-all
+
