@@ -250,3 +250,26 @@ Used the find() method to filter out the schoold using the topic in them
 return mongo_collection.find({'topics': topic})
 ```
 
+### Task 12
+Write a Python script that provides some stats about Nginx logs stored in MongoDB:
+
+- Database: logs
+- Collection: nginx
+- Display (same as the example):
+	- first line: x logs where x is the number of documents in this collection
+	- second line: Methods:
+	- 5 lines with the number of documents with the method = ["GET", "POST", "PUT", "PATCH", "DELETE"] in this order (see example below - warning: it’s a tabulation before each line)
+	- one line with the number of documents with:
+		- method=GET
+		- path=/status
+You can use this dump as data sample: dump.zip
+
+```
+curl -o dump.zip -s "https://s3.amazonaws.com/intranet-projects-files/holbertonschool-webstack/411/dump.zip"
+```
+
+#### Task 12 [Solution]
+**Featured file** -> 12-log_stats.py
+
+#### Task 12 [Solution Breakdown]
+
