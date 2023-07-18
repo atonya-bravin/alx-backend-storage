@@ -155,5 +155,7 @@ if __name__ == "__main__":
 **Featured file** -> 9-insert_school.py
 
 #### Task 9 [Solution Breakdown]
-
-
+We use the insert_one() method to insert a predefined dictionary as a document into a collection
+```
+return mongo_collection.insert_one(kwargs).inserted_id
+```
