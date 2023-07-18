@@ -116,4 +116,10 @@ if __name__ == "__main__":
 **Featured file** -> 8-all.py
 
 #### Task 8 [Solution Beakdown]
-
+In this task, we use list comprehension to deliver the right list of available documents in a collection
+```
+return [each for each in mongo_collection.find()]
+```
+- With the syntax **new_list = [expression for item in iterable if condition]**
+- We use the find() method of the mongo_collection object to retrieve all the documents in the collection.
+- Since find() returns a cursor object that can be iterated over to retrieve each document, we use a list comprehension to create a list of all the documents returned by the cursor.
