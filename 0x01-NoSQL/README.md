@@ -37,3 +37,12 @@ Write a script that creates or uses the database my_db
 
 #### Task 1 [Solution]
 **Featured file** -> 1-use_or_create_database
+
+### Task 2
+Write a script that inserts a document in the collection school:
+
+- The document must have one attribute name with value “Holberton school”
+- The database name will be passed as option of mongo command
+
+#### Task 2 [Solution]
+**Featured file** -> 2-insert
