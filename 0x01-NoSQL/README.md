@@ -266,10 +266,36 @@ You can use this dump as data sample: dump.zip
 
 ```
 curl -o dump.zip -s "https://s3.amazonaws.com/intranet-projects-files/holbertonschool-webstack/411/dump.zip"
+unzip dump.zip
 ```
 
 #### Task 12 [Solution]
 **Featured file** -> 12-log_stats.py
 
 #### Task 12 [Solution Breakdown]
-
+- Creation of a connection through pymongo's MongoClient method
+```
+myclient = pymongo.MongoClient("mongodb://localhost:27017/")
+```
+- Selection of a database **logs**
+```
+my_database = myclient["logs"]
+```
+- Selection of a collection **nginx** for the **logs** database
+```
+nginx = my_database["nginx"]
+```
+- Use of the query object which is a dictionary that contains the name(s) and value(s) of each field in the document we want to retrieve.
+```
+print("{} logs".format(nginx.count_documents({})))
+```
+The {} parameter is an empty query object that matches all documents in the collection. This combined with the cont_documents method, returns the number of documents in the collection
+- print the number of documents with the available methods
+```
+ for method in methods:
+        print(
+            "\tmethod {}: {}".format(
+                method, nginx.count_documents({"method": method}))
+```
+This basically loops through the available method list, then using count_documents, returns the number of documents, containing the current method
+ 
