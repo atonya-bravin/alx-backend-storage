@@ -32,5 +32,8 @@ Write a script that lists all databases in MongoDB.
 #### Task 0 [Solution]
 **Featured file** -> 0x01-NoSQL
 
-#### Task 0 [Solution breakdown]
+### Task 1
+Write a script that creates or uses the database my_db
 
+#### Task 1 [Solution]
+**Featured file** -> 1-use_or_create_database
