@@ -298,4 +298,22 @@ The {} parameter is an empty query object that matches all documents in the coll
                 method, nginx.count_documents({"method": method}))
 ```
 This basically loops through the available method list, then using count_documents, returns the number of documents, containing the current method
- 
+
+### Task 13
+Write a script that lists all documents with name starting by Holberton in the collection school:
+
+- The database name will be passed as option of mongo command 
+
+#### Task 13 [Solution]
+**Featured file** -> 100-find
+
+### Task 14
+Write a Python function that returns all students sorted by average score:
+
+- Prototype: def top_students(mongo_collection):
+- mongo_collection will be the pymongo collection object
+- The top must be ordered
+- The average score must be part of each item returns with key = averageScore
+
+#### Task 14 [Solution]
+**Featured file** -> 101-students.py
