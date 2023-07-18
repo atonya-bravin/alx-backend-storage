@@ -195,3 +195,13 @@ if __name__ == "__main__":
 
 #### Task 10 [Solution]
 **Featured file** -> 10-update_topics.py
+
+#### Task 10 [Solution Breakdown]
+In this task, we are using the update_many() method to update many instances with a specific criteria.
+```
+mongo_collection.update_many(
+        { 'name': name },
+        { '$set': { 'topics': topics }}
+    )
+```
+
