@@ -71,7 +71,7 @@ Write a script that displays the number of documents in the collection school:
 #### Task 5 [Solution]
 **Featured file** -> 5-count
 
-### Taks 6
+### Task 6
 Write a script that adds a new attribute to a document in the collection school:
 
 - The script should update only document with name="Holberton school" (all of them)
@@ -80,4 +80,12 @@ Write a script that adds a new attribute to a document in the collection school:
 
 #### Task 6 [Solution]
 **Featured file** -> 6-update
+
+### Task 7
+Write a script that deletes all documents with name="Holberton school" in the collection school:
+
+- The database name will be passed as option of mongo command
+
+#### Task 7 [Solution]
+**Featured file** -> 7-delete
 
